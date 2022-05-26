@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+h2{
+    font-size: 46px;
+    color: #02918c;
+    font-weight: 800;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+ol,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+/* =================================================================
+                         common css end
+====================================================================*/
+/* =================================================================
+                         menu part start
+====================================================================*/
+.costom_nav {
+    background: #02918c;
+    padding: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+#my_nav ul li a {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 21px 25px;
+}
+
+/* =================================================================
+                         menu part end
+====================================================================*/
+/* =================================================================
+                         banner part start
+====================================================================*/
+.banner_item {
+    height: 728px;
+}
+
+.banner_item img {
+    position: relative;
+}
+
+.overly {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.banner_item .overly h3 {
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 800;
+}
+
+.banner_item .overly h1 {
+    font-size: 68px;
+    color: #ffffff;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+}
+
+.banner_item .overly p {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 800;
+    text-align: center;
+}
+
+.banner_cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner_cont_inner a {
+    color: #0b1016;
+    font-weight: 800;
+    padding: 17px 42px;
+    background: #cfc91d;
+}
+
+/* =================================================================
+                         banner part end
+====================================================================*/
+/* =================================================================
+                         about part start
+====================================================================*/
+#about{
+    padding: 85px 0 100px;
+}
+.about_p p{
+    color: #7e8287;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+}
+.about_p p span{
+    color: #7e8287;
+    font-size: 23px;
+    font-weight: 800;
+}
+.about_items{
+    text-align: center;
+    padding: 35px 30px 50px;
+}
+.about_items p{
+    color: #7e8287;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.about_items h3{
+    font-size: 16px;
+    color: #7e8287;
+    font-weight: 800;
+    padding: 23px 0;
+}
+
+.about_items i{
+    font-size: 30px;
+    color: #02918c;
+}
+.about_border{
+    border-right: 1px solid #d9dbdb;
+}
+.about_border:last-child{
+    border-right: 0;
+}
+#about .about_border{
+    margin: 70px 0 10px;
+}
+/* =================================================================
+                         about part end
+====================================================================*/
+/* =================================================================
+                         service part start
+====================================================================*/
+#service{
+    background: url(../images/banner-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 728px;
+    padding: 65px 92px;
+}
+/* =================================================================
+                         service part end
+====================================================================*/
+/* =================================================================
+                         work part start
+====================================================================*/
+#work{
+    padding: 86px 0;
+}
+.work_items img{
+    width: 100%;
+}
+.img_p{
+    padding-top: 68px;
+}
+.work_items {
+    position: relative;
+}
+.work_items .overly{
+    position: absolute;
+    left: 28px;
+    right: 28px;
+    top: 20px;
+    bottom: 20px;
+    background: rgba(2, 145, 140, 0.6);
+    display: flex;
+    transform: scale(0);
+    transition: all linear .3s;
+}
+.overly h3{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 800;
+}
+.overly p{
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.work_items:hover .overly{
+    transform: scale(1);
+}
+/* =================================================================
+                         work part end
+====================================================================*/
+/* =================================================================
+                         contact part start
+====================================================================*/
+.contact_form{
+    background: #0b0b0b;
+    padding: 50px 0 70px 0;
+}
+.contact_p{
+    padding-bottom: 70px;
+}
+.contact_form .form-control{
+    background: none;
+    border: none;
+    border-bottom: 1px solid #898989;
+    margin-bottom: 50px;
+    height: 50px;
+    border-radius: 0;
+    text-align: center;
+    color: #7e8287;
+    font-weight: 400;
+    font-size: 16px;
+}
+label{
+    text-align: center;
+    display: block;
+    color: #7e8287;
+    font-weight: 400;
+    font-size: 16px; 
+}
+.contact_form textarea .form-control{
+    height: 90px;
+    border-top: 1px solid #898989;
+    resize: none;
+}
+.contact_form .form-control:focus{
+    box-shadow: none;
+}
+.contact_form button{
+    color: #0b1016;
+    font-weight: 800;
+    padding: 12px 65px;
+    background: #cfc91d;
+    border: none;
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.footer_last{
+    background: #000000;
+    padding: 30px 0;
+}
+.footer_last h3{
+    color: #7e8287;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+/* =================================================================
+                         contact part end
+====================================================================*/
+/* menu fixed */
+.menu_fixed{
+    position: fixed;
+    top: 0;
+}
+.back_button {
+   height: 40px;
+   width: 40px;
+   line-height: 40px;
+   font-size: 20px;
+   text-align: center;
+   border-radius: 50%;
+   position: fixed;
+   right: 50px;
+   bottom: 50px;
+   font-weight: 800;
+   color: #ffffff;
+   background: #02918c;
+   cursor: pointer;
+   z-index: 99;
+   display: none;
+}
